@@ -12,12 +12,14 @@
         android:inputType="textAutoComplete"
         android:textSize="18sp"
         android:hint="@string/edit_pyramid_hint"
+        android:layout_margin="16dp"
         android:autofillHints="Hint" />
 
     <Button
         android:id="@+id/button_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:text="@string/new_button"
         />
 

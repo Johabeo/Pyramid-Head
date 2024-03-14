@@ -55,9 +55,9 @@ abstract class PyramidDatabase : RoomDatabase() {
             pyramidDao.deleteALL()
             var pyramid = Pyramid (4,"thing", 2)
             pyramidDao.insert(pyramid)
-            pyramid = Pyramid (5,"thing", 2)
+            pyramid = Pyramid (5,"triangle", 2)
             pyramidDao.insert(pyramid)
-            pyramid = Pyramid (6,"thing", 2)
+            pyramid = Pyramid (6,"pizza", 2)
             pyramidDao.insert(pyramid)
         }
     }
