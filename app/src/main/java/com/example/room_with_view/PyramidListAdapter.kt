@@ -18,14 +18,18 @@ class PyramidListAdapter : ListAdapter<Pyramid,PyramidListAdapter.PyramidViewHol
 
     override fun onBindViewHolder(holder: PyramidViewHolder, position: Int) {
         val current = getItem(position)
-        holder.bind(current.key)
+        holder.bind(current)
     }
 
     class PyramidViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val pyramidItemView: TextView = itemView.findViewById(R.id.textView)
+        private val pyramidIdView: TextView = itemView.findViewById(R.id.idView)
+        private val pyramidKeyView: TextView = itemView.findViewById(R.id.keyView)
+        private val pyramidHeightView: TextView = itemView.findViewById(R.id.heightView)
 
-        fun bind(text: String?) {
-            pyramidItemView.text = text
+        fun bind(pyramid: Pyramid?) {
+            pyramidKeyView.text = pyramid?.key
+            pyramidIdView.text = pyramid?.id.toString()
+            pyramidHeightView.text = pyramid?.height.toString()
         }
 
         companion object {

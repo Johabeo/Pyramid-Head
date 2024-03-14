@@ -53,11 +53,11 @@ abstract class PyramidDatabase : RoomDatabase() {
 
         suspend fun populateDatabase(pyramidDao: PyramidDao) {
             pyramidDao.deleteALL()
-            var pyramid = Pyramid (4,"thing", 2)
+            var pyramid = Pyramid (0,"thing", 2)
             pyramidDao.insert(pyramid)
-            pyramid = Pyramid (5,"triangle", 2)
+            pyramid = Pyramid (1,"triangle", 2)
             pyramidDao.insert(pyramid)
-            pyramid = Pyramid (6,"pizza", 2)
+            pyramid = Pyramid (2,"pizza", 2)
             pyramidDao.insert(pyramid)
         }
     }
