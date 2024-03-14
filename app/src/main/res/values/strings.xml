@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">room-with-view</string>
+    <string name="new_button">New button</string>
+    <string name="edit_pyramid_hint">Edit Pyramid</string>
+    <string name="add_pyramid">Add pyramid</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+</resources>
